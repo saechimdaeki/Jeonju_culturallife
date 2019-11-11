@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.PagerAdapter;
@@ -49,6 +50,8 @@ public class recommend1hanok extends AppCompatActivity
         adapter=new Adapter(this);
         final ViewPager viewPager=(ViewPager)findViewById(R.id.rec1);
         viewPager.setAdapter(adapter);
+        Toast.makeText(this, "사진을 클릭하면 해당 페이지로 이동합니다 사진은 좌우로 밀어 변경할수있고 경로 전체를 보여줍니다", Toast.LENGTH_LONG).show();
+
 
 
         viewPager.setCurrentItem(0);
